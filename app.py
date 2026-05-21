@@ -92,10 +92,8 @@ fig.update_layout(
     legend=dict(orientation="h", yanchor="bottom", y=1.02),
     height=480
 )
-# st.plotly_chart(fig, use_container_width=True)
 st.plotly_chart(fig, width="stretch")
 
-# ── Raw table ─────────────────────────────────────────────────
 with st.expander("📄  Show data table"):
     st.dataframe(
         pd.DataFrame({
